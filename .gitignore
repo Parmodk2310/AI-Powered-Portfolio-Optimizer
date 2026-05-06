@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# Local notes
+DEVELOPMENT_NOTES.md
+
+# Python cache
+__pycache__/
+
+# Build files
+dist/
+build/
