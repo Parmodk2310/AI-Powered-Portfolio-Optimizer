@@ -23,23 +23,23 @@ User Input (stock tickers + portfolio weights)
                     │
                     ▼
         ┌─────────────────────┐
-        │   Streamlit Frontend │  ← frontend/app.py
+        │  Streamlit Frontend │   ← frontend/app.py
         └─────────────────────┘
                     │
                     ▼
         ┌─────────────────────┐
-        │   FastAPI Backend    │  ← src/api/main.py
+        │   FastAPI Backend   │  ← src/api/main.py
         └─────────────────────┘
                     │
           ┌─────────┴──────────┐
           ▼                    ▼
 ┌──────────────────┐  ┌─────────────────────┐
-│  Data Pipeline   │  │  Optimization Layer  │
-│  src/data/       │  │  src/optimization/   │
-│                  │  │                      │
-│ - yfinance       │  │ - Sharpe ratio       │
-│ - NewsAPI        │  │ - MPT weights        │
-│ - FAISS store    │  │ - Risk calculation   │
+│  Data Pipeline   │  │  Optimization Layer │
+│  src/data/       │  │  src/optimization/  │
+│                  │  │                     │
+│ - yfinance       │  │ - Sharpe ratio      │
+│ - NewsAPI        │  │ - MPT weights       │
+│ - FAISS store    │  │ - Risk calculation  │
 └──────────────────┘  └─────────────────────┘
           │
           ▼
