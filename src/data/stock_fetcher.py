@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 # ── Main Functions ─────────────────────────────────────────────────────────────
 
-def fetch_stock_data(tickers: List[str], period: str = "6mo") -> pd.DataFrame:
+def fetch_stock_data(tickers: List[str], period: str = "2y") -> pd.DataFrame:
     """
     Fetch historical closing prices for given tickers.
 
@@ -242,8 +242,8 @@ if __name__ == "__main__":
     tickers = ["AAPL", "MSFT", "GOOGL", "AMZN"]
 
     # ── Test 1: Fetch Price Data ──
-    print("\n[1] Fetching 6-month price history...")
-    prices = fetch_stock_data(tickers, period="6mo")
+    print("\n[1] Fetching 2-year price history...")
+    prices = fetch_stock_data(tickers, period="2y")
     print(f"Shape: {prices.shape} (rows=trading days, cols=tickers)")
     print(f"\nLatest 5 closing prices:")
     print(prices.tail().to_string())
