@@ -239,20 +239,25 @@ if __name__ == "__main__":
     print("=" * 60)
 
     # Test tickers — mix of US tech stocks
-    tickers = ["AAPL", "MSFT", "GOOGL", "AMZN"]
+    tickers = [
+    "AAPL", "MSFT", "GOOGL", "AMZN", "NVDA",
+    "META", "TSLA", "NFLX", "AMD", "INTC",
+    "ORCL", "CRM", "ADBE", "PYPL", "QCOM",
+    "IBM", "CSCO", "AVGO", "SHOP", "UBER"
+]
 
     # ── Test 1: Fetch Price Data ──
     print("\n[1] Fetching 2-year price history...")
     prices = fetch_stock_data(tickers, period="2y")
     print(f"Shape: {prices.shape} (rows=trading days, cols=tickers)")
-    print(f"\nLatest 5 closing prices:")
+    print(f"\nLatest 10 closing prices:")
     print(prices.tail().to_string())
 
     # ── Test 2: Calculate Returns ──
     print("\n[2] Calculating daily returns...")
     returns = calculate_returns(prices)
     print(f"Returns shape: {returns.shape}")
-    print(f"\nLatest 5 daily returns (%):")
+    print(f"\nLatest 10 daily returns (%):")
     print((returns.tail() * 100).round(3).to_string())
 
     # ── Test 3: Summary Stats ──
