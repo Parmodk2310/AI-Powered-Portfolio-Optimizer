@@ -28,7 +28,7 @@ beautifulsoup4==4.12.3
 # ── NLP & Transformers ────────────────────────────────────
 torch==2.2.0
 transformers==4.38.0
-sentence-transformers==2.5.1
+sentence-transformers==2.7.0
 tokenizers==0.15.2
 huggingface-hub==0.21.3
 accelerate==0.27.2
