@@ -30,7 +30,7 @@ faiss-cpu==1.7.4
 # ---LLM & RAG---
 langchain==0.1.9
 langchain-groq==0.0.1
-groq==0.37.1             # FIXED: was 0.1.0; updated to match backend
+groq==1.7.0             # FIXED: was 0.1.0; updated to match backend
 
 # ---Database---
 sqlalchemy==2.0.29
