@@ -42,7 +42,7 @@ passlib[bcrypt]==1.7.4
 
 # ---Visualization---
 altair==5.2.0
-watchdog==4.0.0
+watchdog==4.0.2
 
 # ---Utilities---
 python-dotenv==1.0.1
